@@ -1,10 +1,11 @@
-name: deploy
+name: deploy-site
 
 # 代码提交到main分支时触发github action
 on:
+  workflow_dispatch:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
